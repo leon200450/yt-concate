@@ -1,5 +1,8 @@
 import urllib.request
 import json
+from yt_concate.settings import api_key
+from dotenv import load_dotenv
+import dotenv
 
 CHANNEL_ID = 'UC5PYHgAzJ1wLEidB58SK6Xw'
 
@@ -29,4 +32,5 @@ def get_all_video_in_channel(channel_id):
     return video_links
 
 
-print(get_all_video_in_channel(CHANNEL_ID),len(get_all_video_in_channel(CHANNEL_ID)) )
+#print(get_all_video_in_channel(CHANNEL_ID),len(get_all_video_in_channel(CHANNEL_ID)) )
+print(api_key)
